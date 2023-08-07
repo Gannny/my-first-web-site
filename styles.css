@@ -1,0 +1,220 @@
+
+/*전체영역에서 여백을 없애줌*/
+    * {
+      margin:0px;
+      padding:0px;
+    }
+li{
+  list-style:none;
+}
+a{
+  text-decoration:none;font-size:14px;
+}
+
+.menu{
+  width:1000px;
+  overflow:hidden;
+  margin:100px auto;
+  margin-top:20px;
+  align-items: center;
+  
+}
+.menu>li{
+  width:150px;
+  float:left;
+  text-align:center;
+  line-height:40px;
+  background-color:#066b1e;
+  margin-right: 15px; /* 메뉴 간격을 떨어트립니다. */
+}
+.menu a{
+  color:#fff
+}
+.submenu>li{
+  line-height:50px;
+  background-color:#dcf4e248;
+}
+.submenu{
+  height:0;/*ul의 높이를 안보이게 처리*/
+  overflow:hidden;
+}
+
+.menu>li:hover{
+  background-color:rgb(21, 150, 54);
+  transition-duration:0.5s;
+}
+.menu>li:hover .submenu{
+  height:250px; /*서브메뉴 li한개의 높이 50*5*/
+  transition-duration:1s;
+  background-color:black;
+}
+.submenu>li:hover {
+  background-color: #08080813;
+}
+
+/*검색창
+/* 스타일 시트 */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color:aliceblue;
+}
+
+header {
+  background-image: url("images/main_header.jpg"); /* 배경 이미지 설정 */
+  background-size: cover; /* 이미지가 Header에 맞게 자동으로 조절되도록 설정 */
+  background-position: center; /* 이미지를 Header의 가운데에 위치시킵니다. */
+  background-color: #333;
+  color: #fff;
+  padding: 120px;
+  text-align: center;
+  display: flex;
+  flex-direction: column; /* 검색창과 제목을 세로로 정렬합니다. */
+  align-items: center;
+  position: relative; /* Header를 상대적 위치로 설정합니다. */
+  text-shadow: 2px 0px black;
+}
+
+/* p 태그를 감싸는 컨테이너 스타일 */
+.text-container {
+  width: 90%; /* 텍스트의 양 옆 길이를 줄일 수 있는 너비를 설정합니다. */
+  margin: 0 auto; /* 수평 정렬을 위해 가운데로 옮겨줍니다. */
+}
+
+p{
+  font-size:18px;
+
+}
+
+h1 {
+  font-size:40px;
+  margin-bottom: 40px;
+}
+.top-nav {
+  position: absolute; /* top, right 속성을 적용하기 위해 절대 위치로 설정합니다. */
+  top: 20px; /* Header 상단과의 간격을 조정합니다. */
+  right: 1px; /* Header 오른쪽과의 간격을 조정합니다. */
+  display: flex;
+}
+
+.top-nav .login, .top-nav .signup {
+  margin-right: 30px;
+}
+
+.top-nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 6px 12px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+}
+
+.search-box input[type="text"] {
+  padding: 20px;
+  border: 2px solid #066b1e;
+  border-radius: 20px;
+  margin-right: 5px;
+  width: 400px; 
+}
+
+.search-box button {
+  padding: 20px 20px;
+  background-color: #066b1e;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.buttons {
+  margin-top: 10px; /* 버튼들 사이에 간격을 주기 위해 마진 추가 */
+}
+
+.buttons button {
+  padding: 6px 12px;
+  background-color: #0caa33;
+  color: #fff;
+  border: 1px solid #0caa33;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-right: 50px; /* 버튼들 사이의 간격을 조정 */
+}
+
+.buttons button:last-child {
+  margin-right: 0; /* 마지막 버튼의 오른쪽 마진을 제거하여 간격을 조정 */
+}
+
+/* 박스 형태로 추가된 내용 스타일 */
+.event-description {
+  background-color: #f1f1f1;
+  padding: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 0px;
+  text-align:center;
+}
+
+.event-description p {
+  margin: 0;
+}
+
+.event-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    overflow: hidden; /* 이벤트 배너 영역의 너비를 조정하기 위해 오버플로우를 숨깁니다. */
+  }
+  
+  .event-slide {
+    display: flex;
+    transition: transform 0.3s ease-in-out; /* 슬라이드 효과를 위한 트랜지션 설정 */
+  }
+  
+  .event-slide img {
+    width: 200px; /* 각 이벤트 이미지의 너비를 조정합니다. */
+    height: 150px; /* 각 이벤트 이미지의 높이를 조정합니다. */
+    object-fit: cover;
+    margin-right: 10px; /* 각 이미지의 오른쪽 마진을 조정하여 간격을 설정합니다. */
+  }
+
+  footer{
+    border: 1px solid rgba(0, 0, 0, 0.099);
+    background-color: rgba(174, 173, 173, 0.705);
+    text-align:center;
+    margin-top:20px
+
+}
+
+
+/* 이벤트 배너 스타일 */
+.event-banner {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 30px;
+  color: #00330f;
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 20px;
+}
+
+.arrow-right {
+  right: 20px;
+}
+
